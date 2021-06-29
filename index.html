@@ -7,20 +7,61 @@
     <title>Document</title>
 </head>
 <body>
- <input type="text" class="text" id="text1" value="0" style="display: block;" >   
- <input type="text" class="text" id="text2" value="0" style="display: block;" >   
- <input type="button" class="text" id="button" value="multiply" style="display: block;" onclick="cal()" >   
- <input type="text" class="text" id="text3" value="0" style="display: block;" >   
-
+    <img src="blue.jpg" style="display: block; width: 15em; height: 20em;" id="image1" >
+    <img src="brouwn.jpg" style="display: none; width: 15em; height: 20em;" id="image2" >
+    <img src="gold.jpg" style="display: none; width: 15em; height: 20em;" id="image3" >
     
-    <script>
-        function cal()
-        {
-        var x= document.getElementById("text1")
-        var y=document.getElementById("text2")
-        var z=document.getElementById("text3")
-        z.value =x.value * y.value
-        }
-    </script>
+
+
+    <input type="button" value="blue" class="image-button" id="btn-image" onclick="image1()" >
+    <input type="button" value="brouwn" class="image-button" id="btn-image" onclick="image2()" >
+    <input type="button" value="gold" class="image-button" id="btn-image" onclick="image3()" >
+
 </body>
+
+
+<script>
+
+function image1()
+{
+var x = document.getElementById("image1")
+var y = document.getElementById("image2")
+var z = document.getElementById("image3")
+
+x.style.display = "block";
+y.style.display = "none";
+z.style.display = "none";
+
+}
+
+function image2()
+{
+var x = document.getElementById("image1")
+var y = document.getElementById("image2")
+var z = document.getElementById("image3")
+
+x.style.display = "none";
+y.style.display = "block";
+z.style.display = "none";
+
+}
+
+function image3()
+{
+var x = document.getElementById("image1")
+var y = document.getElementById("image2")
+var z = document.getElementById("image3")
+
+x.style.display = "none";
+y.style.display = "none";
+z.style.display = "block";
+
+}
+
+
+
+
+</script>
+
+
 </html>
