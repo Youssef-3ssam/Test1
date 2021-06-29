@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <input type="text" class="text" id="text1" value="0" style="display: block;" >   
+ <input type="text" class="text" id="text2" value="0" style="display: block;" >   
+ <input type="button" class="text" id="button" value="multiply" style="display: block;" onclick="cal()" >   
+ <input type="text" class="text" id="text3" value="0" style="display: block;" >   
+
+    
+    <script>
+        function cal()
+        {
+        var x= document.getElementById("text1")
+        var y=document.getElementById("text2")
+        var z=document.getElementById("text3")
+        z.value =x.value * y.value
+        }
+    </script>
+</body>
+</html>
